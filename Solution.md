@@ -24,7 +24,6 @@ ORDER BY month;
 **Question:**
 How does discount affect profitability?
 
-**SQL Query:**
 ```sql
 SELECT 
     Discount,

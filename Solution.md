@@ -47,7 +47,8 @@ SELECT
 FROM Superstore
 GROUP BY product_name
 having total_profit <0
-ORDER BY total_profit asc;
+ORDER BY total_profit asc
+limit 10;
 ```
 
 ## 4. Category vs Profitability

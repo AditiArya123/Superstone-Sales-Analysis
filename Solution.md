@@ -43,10 +43,10 @@ Which products are generating losses?
 SELECT 
     product_name, 
     round(SUM(Sales), 2) AS total_sales,
-    round(SUM(Profit),2) AS total_profit
+    ABS(round(SUM(Profit),2)) AS total_loss
 FROM Superstore
 GROUP BY product_name
-having total_profit <0
+having total_profit < 0
 ORDER BY total_profit asc
 limit 10;
 ```

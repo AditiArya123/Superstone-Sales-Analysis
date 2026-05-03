@@ -5,6 +5,11 @@ This section contains business-focused analysis using SQL along with insights.
 ---
 
 ## 1. Monthly Sales Trend
+**Result:**  
+Monthly revenue values were generated showing variation over time.
+
+**Insight:**  
+Sales show an overall upward trend with fluctuations, indicating growth with seasonal demand patterns.
 
 **Question:**  
 How are sales changing over time?
@@ -20,6 +25,11 @@ ORDER BY month;
 ```
 
 ## 2. Impact of Discount on Profit
+**Result:**  
+Profitability was compared across different discount levels.
+
+**Insight:**  
+Higher discounts reduce profitability, and aggressive discounting can lead to losses.
 
 **Question:**
 How does discount affect profitability?
@@ -35,6 +45,11 @@ ORDER BY Discount;
 ```
 
 ## 3. Loss-Making Products
+**Result:**  
+Products with negative total profit were identified.
+
+**Insight:**  
+Some products consistently lose money despite generating sales, suggesting pricing or cost issues.
 
 **Question:**  
 Which products are generating losses?
@@ -52,6 +67,12 @@ LIMIT 10;
 ```
 
 ## 4. Category vs Profitability
+**Result:**  
+Sales and profit were compared across product categories.
+
+**Insight:**  
+Technology performs strongest overall, while some categories generate lower profit margins.
+
 **Question:**  
 Which categories are most profitable, not just highest in sales?
 
@@ -66,6 +87,11 @@ ORDER BY total_profit desc;
 ```
 
 ## 5. Regional Profitability
+**Result:**  
+Sales and profit performance were calculated for each region.
+
+**Insight:**  
+Regional demand differs significantly, indicating location-based opportunities and inefficiencies.
 
 **Question:**  
 Which regions are most profitable?
@@ -81,6 +107,11 @@ ORDER BY total_profit desc;
 ```
 
 ## 6. Top Customers & Ranking
+**Result:**  
+Customers were ranked based on cumulative purchases.
+
+**Insight:**  
+Revenue is unevenly distributed across customers, with top buyers outperforming the rest.
 
 **Question:**  
 Who are the highest-value customers and how do they rank based on spending?
@@ -98,6 +129,11 @@ Limit 10;
 ```
 
 ## 7. Customer Segment Profitability
+**Result:**  
+Total sales and profit were calculated for each customer segment.
+
+**Insight:**  
+Some segments generate strong revenue but lower profit margins, while others contribute healthier profitability. This helps identify the most valuable customer group.
 
 **Question:**  
 Which customer segments generate the highest sales and profit?
